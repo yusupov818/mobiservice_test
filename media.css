@@ -1,0 +1,463 @@
+
+
+@media only screen and (min-width: 800px) {
+    .hamburger_menu {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 380px;
+        height: 100%;
+        transform: translateX(calc(100% + 80px));
+        background-color: #0097ff;
+        transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        z-index: 99999;
+        overflow-y: scroll;
+        overscroll-behavior-y: contain;
+        scrollbar-width: none;
+    }
+
+    .hamburger_menu.active {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .hamburger_menu .hamburger_wrapper {
+        position: relative;
+        padding: 25px 20px 145px;
+        z-index: 1;
+        min-height: 100%;
+    }
+
+    .hamburger_wrapper .hamburger_menu_list {
+        margin-top: 40px;
+    }
+
+    .hamburger_wrapper .hamburger_menu_list li {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .hamburger_wrapper .hamburger_menu_list li>a {
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+        color: #fff;
+        position: relative;
+        padding: 10px 0;
+        padding-right: 20px;
+    }
+
+    .hamburger_wrapper .hamburger_menu_list li a {
+        border-bottom: 1px solid #fff;
+    }
+
+    .hamburger_wrapper .hamburger_menu_list li a:hover {
+        color: #edd290;
+    }
+
+    .hamburger_wrapper .hamburger_close button {
+        display: inline-block;
+        font-size: 16px;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        background-color: transparent;
+        color: #010f1c;
+        outline: none;
+        border: none;
+    }
+
+    .hamburger_menu .hamburger_wrapper .hamburger_close {
+        position: absolute;
+        top: 25px;
+        right: 20px;
+    }
+
+    .hamburger_menu .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    body.disable {
+        overflow: hidden;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 105;
+        pointer-events: none;
+    }
+
+    .overlay.active {
+        pointer-events: all;
+        opacity: 1;
+        visibility: visible;
+    }
+    
+}
+
+/* 576px */
+/* 576px */
+@media all and (max-width: 576px) {
+    .head_content {
+        background-image: none;
+        
+        height: 90vh;
+      }
+      .bold{
+        font-size: 20px;
+        padding: 5px;
+      }
+      .container{
+        background-color: #0097ff;
+      }
+        .glav-mob {
+            display: block;
+            overflow: hidden;
+          margin: 0 auto;
+        }
+
+        .men-1 {
+            display: flex;
+            justify-content: space-evenly;
+       background-color: #0097ff;
+       color: white;
+            padding: 7px;
+            font-size: 13px;
+        }
+
+        .men-2-2 {
+
+            padding: 30px;
+            font-weight: 600;
+            font-size: 25px;
+            text-align: center;
+        }
+        .men-2-2-2{
+            text-align: center;
+            font-size: 17px;
+        }
+        .men-3{
+          padding-top: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .men-3 img{
+            
+            width: 450px;
+        }
+        .men-4-4{
+          
+            margin: 2%;
+       text-align: center;
+       color: gray;
+           
+        }
+         .men-4-4 div{
+            padding: 10px;
+         }
+         .men-5{
+            display: flex;
+            justify-content: center;
+         }
+    
+#header-promo{
+    display: none;
+}
+    
+    .container {
+        max-width: 100%;
+
+    }
+
+    header .header_row {
+        justify-content: space-between;
+        margin: 0 5%;
+    }
+
+    .header-row {
+        display: none;
+    }
+
+    .hamburger-btn {
+        display: block;
+
+    }
+
+    header .logo {
+        width: 50%;
+    }
+
+    header .logo img {
+        height: auto;
+        width: 100%;
+    }
+
+    .phone {
+
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .ikki {
+        display: block;
+        width: 100%;
+    }
+
+    .ikki a {
+        width: 100%;
+    }
+
+    .ikki img {
+        height: auto;
+        width: 150%;
+    }
+
+
+   
+
+    .text-promo {
+        font-size: 28px;
+        width: calc(90% - 50px);
+    }
+
+    .img-promo-1 {
+        font-size: 15px;
+    }
+
+    .text_promo_btn {
+        width: 60%;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        border: 1px solid #0097ff;
+    }
+
+    .top-pro {
+        display: block;
+        margin: 0 auto;
+
+
+    }
+
+    .top-1,
+    .top-2,
+    .top-3 {
+        width: 100%;
+        margin: 3% 0 0 0;
+        height: 280px;
+    }
+
+    .social_links {
+        display: none;
+    }
+    /*  */
+    .price-seting {
+        padding-top: 22px;
+        
+      
+      }
+ 
+      
+.text-price p{
+    font-size: 20px;
+}
+.top-text{
+    color: grey;
+    padding: 10px;
+    font-size: 24px;
+    margin: 8% 0 0 0;
+    font-weight: 500;
+}
+
+.price-text {
+    background-color: #0062ff;
+    width: 35%;
+    border-radius: 20px;
+    padding: 1px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .top-about{
+    padding: 0;
+  }
+   .top-about div{
+    padding: 0;
+    font-size: 25px;
+   }
+   .about-1-1{
+    text-align: center;
+    padding: 20px;
+}
+.about-2 {
+  margin: 0 5%;
+  padding: 30px;
+}
+.promo_block_title_1 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 29px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.ser-foto {
+display: none;
+ 
+}
+#service div{
+    padding: 10px;
+}
+.servise-block{
+    padding: 20px;
+}
+.servise-block_3{
+    
+    justify-content: center;
+}
+.promo_block_title_2{
+    display: none;
+}
+.promo-block-text{
+    padding: 20px;
+}
+.promo_block_button {
+  
+  font-size: 13px;
+  line-height: 10px;
+  padding: 5px;
+
+  
+}
+
+.call_back{
+    display: block;
+    padding: 20px;
+}
+.call-back-text {
+
+  padding-left: 0px;
+}
+.call-span {
+  font-size: 20px;
+  padding: 20px;
+}
+.call-back-select {
+
+  font-size: 15px;
+padding: 10px;
+}
+.call-back-img {
+  width: 200px;
+  height: 233px;
+}
+.call_back_img{
+     margin:0 18%;
+}
+.call_back_form {
+
+  padding: 19px;
+
+
+}
+.call-back-form-title {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+    /* letter-spacing: 1px; */
+    margin-bottom: 20px;
+  }
+  .info-block {
+display: block;
+  }
+  .info-block div{
+    padding: 5px;
+  }
+  .map-block-title {
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+   
+  }
+  .icon-map {
+    width: 20%;
+    height: 20%;
+    margin-right: 6px;
+  }
+  .map {
+    font-size: 15px;
+    padding: 20px;
+  }
+  .info_block_social{
+    font-size: 15px;
+  }
+  .info_block_social img {
+    width: 20px;
+    padding: 0px;
+  }
+
+  footer {
+    background-color: #0a8cf8;
+    font-size: 14px;
+    padding: 20px;
+    height: auto;
+  }
+  .fot1{
+    display: block;
+    text-align: center;
+  }
+  /* program */
+
+
+  .prog_1{
+    font-size: 30px;
+ 
+  }
+  .prog_2 {
+    display: block;
+    width: 100%;
+    margin: 10%;
+  
+    
+    }
+   
+    .prog-2-1{
+      margin: 0 0 3%  0%;
+      width: 80%;
+    }
+    .prog-2-2{
+      margin: 0 0 3%  0%;
+      width: 80%;
+    }
+    .prog-2-3{
+      margin: 0 0 3%  0%;
+      width: 80%;
+    }
+    .prog-2-4{
+      margin: 0 0 3%  0%;
+      width: 80%;
+    }
+    .prog-2-5{
+
+      width: 80%;
+    }
+
+}   
